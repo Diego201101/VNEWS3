@@ -1,0 +1,52 @@
+.settings-list {
+    width: 100%;
+    max-width: 600px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    margin-top: 20px;
+}
+.settings-item {
+    display: flex;
+    align-items: center; /* Alinea los elementos (icon y text) verticalmente en el centro */
+    padding: 15px 20px;
+    transition: background-color 0.3s ease;
+    color: #333;
+    font-size: 16px;
+    cursor: pointer;
+}
+.settings-item:hover {
+    background-color: #f0f0f0;
+}
+.settings-item .icon {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente el contenido del icono */
+    align-items: center;   /* Centra verticalmente el contenido del icono */
+    width: 24px;           /* Ancho fijo para el área del icono */
+    height: 24px;          /* Altura fija para el área del icono */
+    margin-right: 15px;
+    color: #666;
+}
+.settings-item .icon span {
+    font-size: 20px;
+    line-height: 1;
+    display: block;
+}
+.settings-item .item-text {
+    color: #333;
+    font-size: 16px;
+    flex-grow: 1;
+    line-height: 1; /* Establece un line-height exacto para el texto */
+    margin: 0;
+    padding: 0;
+}
+.settings-item.divider {
+    height: 1px;
+    background-color: #e0e0e0;
+    margin: 0;
+    padding: 0;
+}
+.settings-item.divider:hover {
+    background-color: #e0e0e0 !important;
+}

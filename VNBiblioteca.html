@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html land="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.8">
+    <title>VerificaNews - Biblioteca</title>
+    <link rel="stylesheet" href="VNPaginaEstilos.css">
+    <link rel="stylesheet" href="VNBibliotecaEstilos.css">
+</head>
+<body>
+    <div class="sidebar">
+        <h1 class="logo">VerificaNews</h1>
+        <div class="menu-section">
+            <ul class="menu">
+                <li class="menu-item">
+                    <span class="item-text">Inicio</span>
+                </li>
+                <li class="menu-item divider"></li>
+                <li class="menu-item">
+                    <span class="item-text">Tutorial de uso</span>
+                </li>
+                <li class="menu-item divider"></li>
+                <li class="menu-item">
+                    <span class="item-text">Contenido Educativo Fake NEWS</span>
+                </li>
+            </ul>
+        </div>
+        <div class="menu-section">
+            <h2 class="section-title">Mi Cuenta</h2>
+            <ul class="menu">
+                <li class="menu-item">
+                    <span class="item-text">Bliblioteca</span>
+                </li>
+                <li class="menu-item divider"></li>
+                <li class="menu-item">
+                    <span class="item-text">Historial</span>
+                </li>
+                <li class="menu-item divider"></li>
+                <li class="menu-item">
+                    <span class="item-text">Configuración</span>
+                </li>
+                <li class="menu-item divider"></li>
+                <li class="menu-item">
+                    <span class="item-text">Cerrar Sesion</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="main-content">
+        <h3>CARPETAS</h3>
+        <div id="foldersContainer" class="folders-container"></div>
+        <div id="addFolderBtn" class="verification-box">
+            <img src="add_folder_icon.png" alt="Añadir carpeta" class="verification-icon">
+            <span class="verification-text-bottom">Subir Carpeta</span>
+        </div>
+        <div id="folderModal" class="modal">
+            <div class="modal-content">
+                <span class="close-modal">&times;</span>
+                <h3>Nueva Carpeta</h3>
+                <input type="text" id="folderNameInput" placeholder="Nombre de la carpeta">
+                <button id="createFolderBtn">Crear</button>
+            </div>
+        </div>
+        <div id="folderContentView" class="folder-content-view">
+            <div class="folder-content-header">
+                <button id="backToFoldersBtn" class="back-button">← Volver a carpetas</button>
+                <h3 id="currentFolderName"></h3>
+                <div class="folder-options">
+                    <button class="options-button">⋮ Opciones</button>
+                    <div class="options-menu">
+                        <button class="option-item view-history">📝 Ver historial</button>
+                        <button class="option-item delete">🗑️ Eliminar carpeta</button>
+                    </div>
+                </div>
+            </div>
+            <div id="folderItemsContainer" class="folder-items-container"></div>
+        </div>
+    </div>
+    <script src="VNNavegacion.js"></script>
+    <script src="VNBibliotecario.js"></script>
+</body>
+</html>

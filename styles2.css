@@ -1,0 +1,37 @@
+/* Hero Section */
+    .hero {
+        background: url('imagen1.jpg') no-repeat center center;
+        background-size: cover;
+    }
+    
+    /* Why Choose Us - Features */
+    .feature:nth-child(1) { /* Aplicación 100% Peruana */
+        background: url('imagen2.jpg') no-repeat center center;
+        background-size: cover;
+    }
+    .feature:nth-child(2) { /* Detección Rápida y Precisa */
+        background: url('imagen3.jpg') no-repeat center center;
+        background-size: cover;
+    }
+    .feature:nth-child(3) { /* Fuentes Confiables */
+        background: url('imagen4.jpg') no-repeat center center;
+        background-size: cover;
+    }
+    .feature:nth-child(4) { /* Sencilla de Usar */
+        background: url('imagen5.jpg') no-repeat center center;
+        background-size: cover;
+    }
+    
+    /* Latest News - News Cards */
+    .news-card:nth-child(1) { /* Estallan protestas... */
+        background: url('imagen6.jpg') no-repeat center center;
+        background-size: cover;
+    }
+    .news-card:nth-child(2) { /* Vuelos cancelados... */
+        background: url('imagen7.jpg') no-repeat center center;
+        background-size: cover;
+    }
+    .news-card:nth-child(3) { /* Uzbekistán... */
+        background: url('imagen8.jpg') no-repeat center center;
+        background-size: cover;
+    }

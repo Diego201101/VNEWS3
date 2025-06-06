@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html land="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.8">
+    <title>VerificaNews</title>
+    <link rel="stylesheet" href="VNPaginaEstilos.css">
+</head>
+<body>
+    <div class="sidebar">
+        <h1 class="logo">VerificaNews</h1>
+        <div class="menu-section">
+            <ul class="menu">
+                <li class="menu-item">
+                    <span class="item-text">Inicio</span>
+                </li>
+                <li class="menu-item divider"></li>
+                <li class="menu-item">
+                    <span class="item-text">Tutorial de uso</span>
+                </li>
+                <li class="menu-item divider"></li>
+                <li class="menu-item">
+                    <span class="item-text">Contenido Educativo Fake NEWS</span>
+                </li>
+            </ul>
+        </div>
+        <div class="menu-section">
+            <h2 class="section-title">Mi Cuenta</h2>
+            <ul class="menu">
+                <li class="menu-item">
+                    <span class="item-text">Bliblioteca</span>
+                </li>
+                <li class="menu-item divider"></li>
+                <li class="menu-item">
+                    <span class="item-text">Historial</span>
+                </li>
+                <li class="menu-item divider"></li>
+                <li class="menu-item">
+                    <span class="item-text">Configuración</span>
+                </li>
+                <li class="menu-item divider"></li>
+                <li class="menu-item">
+                    <span class="item-text">Cerrar Sesion</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="main-content">
+        <h3>Verficador</h3>
+        <div class="form-container">
+            <div class="input-area">
+                <div class="url-input-container">
+                    <input type="text" placeholder="Pega una URL aquí..." class="text-input url-input" id="urlInput">
+                    <span class="clear-url-button" id="clearUrlButton">&#x2716;</span>
+                </div>
+                <div contenteditable="true" class="editable-content" placeholder="Arrastra y suelta imágenes o pega aquí..." id="imageDropArea"></div>
+                <input type="file" id="imageUpload" accept="image/*" style="display: none;">
+                <div class="form-actions">
+                    <div class="input-icons">
+                        <span class="icon url-icon">🔗</span> 
+                        <span class="icon clip-icon" id="clipIcon">📎</span>
+                    </div>
+                    <button class="verify-button">Verificar</button>
+                </div>
+            </div>
+            <input type="file" id="imageUpload" accept="image/*" style="display: none;">
+        </div>
+    </div>
+    <script src="VNNavegacion.js"></script>
+    <script src="VNVerificado.js"></script>
+</body>
+</html>
